@@ -1,103 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdul Samad | AI & Data Science Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Samad | AI/ML & Data Science Freelancer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f4f6f8;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #1f2937;
-      color: white;
-      padding: 2rem;
+      background-color: #0d1117;
+      color: #ffffff;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    .container {
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+    section {
+      padding: 2rem 1rem;
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: auto;
     }
-    h1, h2 {
-      color: #111827;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #0d1117;
     }
-    .project, .certification {
-      background: white;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
     }
     a {
-      color: #2563eb;
+      color: #007bff;
       text-decoration: none;
+      font-weight: bold;
+    }
+    .certifications {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .cert-card {
+      width: 280px;
     }
     footer {
+      background-color: #0d1117;
+      color: #ffffff;
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #6b7280;
+      padding: 1rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Abdul Samad</h1>
-    <p>BS-AI Student | Aspiring Top-Rated Freelancer | AI, ML & Data Science Enthusiast</p>
+    <p>BS-AI Student at Szabist Islamabad | Aspiring AI/ML & Data Science Expert | Future Top-Rated Freelancer</p>
   </header>
 
-  <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>I am Abdul Samad, a BS-AI student from Szabist Islamabad with a goal of becoming a professional, top-rated freelancer by mastering and implementing AI, ML, and Data Science.</p>
-    </section>
+  <section>
+    <h2>🚀 About Me</h2>
+    <div class="card">
+      <p>I am Abdul Samad, a passionate BS-AI student at Szabist Islamabad, focused on mastering Artificial Intelligence, Machine Learning, and Data Science. My goal is to become a professional, top-rated freelancer by solving real-world problems and building impactful AI solutions.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, Pandas, NumPy, Scikit-learn</li>
-        <li>Matplotlib, Seaborn, Data Visualization</li>
-        <li>Machine Learning, Deep Learning</li>
-        <li>SQL, Git, GitHub</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Example Project: House Price Predictor</h3>
-        <p>Built a regression model using Scikit-learn to predict house prices based on location, size, and features.</p>
-        <p><strong>Tools:</strong> Python, Pandas, Scikit-learn</p>
-        <p><a href="#">View on GitHub</a></p>
+  <section>
+    <h2>💼 Certifications</h2>
+    <div class="certifications">
+      <div class="card cert-card">
+        <h3>Kaggle: Pandas</h3>
+        <p>Issued: May 2, 2025</p>
+        <a href="https://www.kaggle.com/learn/certification/abdulsamadrauf/pandas" target="_blank">View Certificate →</a>
       </div>
-      <!-- Add more projects here as you complete them -->
-    </section>
 
-    <section>
-      <h2>Certifications</h2>
-      <div class="certification">
-        <h3>Kaggle Python Course</h3>
-        <p><a href="#">View Certificate</a></p>
+      <div class="card cert-card">
+        <h3>FreeCodeCamp: Scientific Computing with Python</h3>
+        <p>Issued: 2025</p>
+        <a href="https://www.freecodecamp.org/certification/fcce53bc2a1-6d5a-44e1-a235-000f188517be/scientific-computing-with-python-v7" target="_blank">View Certificate →</a>
       </div>
-      <!-- Add more certifications here as you earn them -->
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:rauf.mughal8930@gmail.com">rauf.mughal8930@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/abdulsamad00529" target="_blank">github.com/abdulsamad00529</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/abdul-samad-113aa5248/" target="_blank">linkedin.com/in/abdul-samad-113aa5248</a></p>
-    </section>
-  </div>
+  <section>
+    <h2>🌐 Connect with Me</h2>
+    <div class="card">
+      <p>📧 Email: <a href="mailto:rauf.mughal8930@gmail.com">rauf.mughal8930@gmail.com</a></p>
+      <p>🔗 GitHub: <a href="https://github.com/abdulsamad00529" target="_blank">github.com/abdulsamad00529</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/abdul-samad-113aa5248/" target="_blank">linkedin.com/in/abdul-samad-113aa5248</a></p>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Abdul Samad. All rights reserved.</p>
+    <p>&copy; 2025 Abdul Samad. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
