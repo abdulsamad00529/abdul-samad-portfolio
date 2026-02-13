@@ -236,9 +236,8 @@
       text-align: center;
       margin-bottom: 3rem;
       position: relative;
-      display: inline-block;
-      left: 50%;
-      transform: translateX(-50%);
+      display: block;
+      width: 100%;
     }
 
     .section-title::after {
@@ -450,10 +449,19 @@
 
       .nav-links {
         gap: 1rem;
+        font-size: 0.9rem;
       }
 
       .section-title {
         font-size: 2rem;
+      }
+
+      nav {
+        padding: 1rem;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
       }
     }
 
@@ -515,7 +523,7 @@
     <h2 class="section-title fade-in">About Me</h2>
     <div class="cert-card fade-in" style="max-width: 800px; margin: 0 auto;">
       <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
-        I'm a passionate BS-AI student at Szabist Islamabad, dedicated to mastering Artificial Intelligence, Machine Learning, and Data Science. My mission is to solve real-world problems through innovative AI solutions and become a top-tier AI/ML Engineer. I'm constantly learning, building, and pushing the boundaries of what's possible with technology.
+        I'm a passionate BS-AI student at Szabist Islamabad, dedicated to mastering Artificial Intelligence, Machine Learning, and Data Science. My mission is to solve real-world problems through innovative AI solutions and become a top-tier AI/ML Engineer. I specialize in building intelligent systems using cutting-edge technologies including Generative AI, LangChain, and advanced data analytics. I'm constantly learning, building, and pushing the boundaries of what's possible with technology.
       </p>
     </div>
   </section>
@@ -542,7 +550,7 @@
       </div>
       <div class="skill-card fade-in">
         <div class="skill-icon">📈</div>
-        <h3>Data Viz</h3>
+        <h3>Data Visualization</h3>
       </div>
       <div class="skill-card fade-in">
         <div class="skill-icon">💬</div>
@@ -556,6 +564,22 @@
         <div class="skill-icon">🗃️</div>
         <h3>SQL</h3>
       </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🔗</div>
+        <h3>LangChain</h3>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">✨</div>
+        <h3>Generative AI</h3>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🐼</div>
+        <h3>Pandas</h3>
+      </div>
+      <div class="skill-card fade-in">
+        <div class="skill-icon">📐</div>
+        <h3>NumPy</h3>
+      </div>
     </div>
   </section>
 
@@ -565,6 +589,32 @@
     <div class="cert-grid">
       <div class="cert-card fade-in">
         <div class="cert-header">
+          <div class="cert-logo">🔗</div>
+          <div>
+            <div class="cert-title">LangChain and Workflow Design</div>
+            <div class="cert-date">Simplilearn • Feb 12, 2026</div>
+          </div>
+        </div>
+        <a href="https://coursera.org/share/8f5b66974030c619580b68c4c835eb41" target="_blank" class="cert-link">
+          View Certificate →
+        </a>
+      </div>
+
+      <div class="cert-card fade-in">
+        <div class="cert-header">
+          <div class="cert-logo">🤖</div>
+          <div>
+            <div class="cert-title">Generative AI: Introduction And Applications</div>
+            <div class="cert-date">IBM • Feb 12, 2026</div>
+          </div>
+        </div>
+        <a href="https://coursera.org/share/d5e8b074bb4833d9d97ab145e7fa4170" target="_blank" class="cert-link">
+          View Certificate →
+        </a>
+      </div>
+
+      <div class="cert-card fade-in">
+        <div class="cert-header">
           <div class="cert-logo">📊</div>
           <div>
             <div class="cert-title">Pandas Certification</div>
@@ -572,19 +622,6 @@
           </div>
         </div>
         <a href="https://www.kaggle.com/learn/certification/abdulsamadrauf/pandas" target="_blank" class="cert-link">
-          View Certificate →
-        </a>
-      </div>
-
-      <div class="cert-card fade-in">
-        <div class="cert-header">
-          <div class="cert-logo">🐍</div>
-          <div>
-            <div class="cert-title">Scientific Computing with Python</div>
-            <div class="cert-date">FreeCodeCamp • April 27, 2025</div>
-          </div>
-        </div>
-        <a href="https://www.freecodecamp.org/certification/fcce53bc2a1-6d5a-44e1-a235-000f188517be/scientific-computing-with-python-v7" target="_blank" class="cert-link">
           View Certificate →
         </a>
       </div>
@@ -614,29 +651,16 @@
           View Certificate →
         </a>
       </div>
-    </div>
-          <div class="cert-card fade-in">
+
+      <div class="cert-card fade-in">
         <div class="cert-header">
-          <div class="cert-logo">🗃️</div>
+          <div class="cert-logo">🐍</div>
           <div>
-            <div class="cert-title">LangeChain and WorkFlow Design Course</div>
-            <div class="cert-date">Simplilearn • Feb 12, 2026</div>
+            <div class="cert-title">Scientific Computing with Python</div>
+            <div class="cert-date">FreeCodeCamp • April 27, 2025</div>
           </div>
         </div>
-        <a href="https://coursera.org/share/8f5b66974030c619580b68c4c835eb41" target="_blank" class="cert-link">
-          View Certificate →
-        </a>
-      </div>
-    </div>
-          <div class="cert-card fade-in">
-        <div class="cert-header">
-          <div class="cert-logo">🗃️</div>
-          <div>
-            <div class="cert-title">Generative AI: Introduction And Applications</div>
-            <div class="cert-date">IBM • Feb 12, 2026</div>
-          </div>
-        </div>
-        <a href="https://coursera.org/share/d5e8b074bb4833d9d97ab145e7fa4170" target="_blank" class="cert-link">
+        <a href="https://www.freecodecamp.org/certification/fcce53bc2a1-6d5a-44e1-a235-000f188517be/scientific-computing-with-python-v7" target="_blank" class="cert-link">
           View Certificate →
         </a>
       </div>
@@ -679,7 +703,7 @@
       'AI/ML Engineer',
       'Data Scientist',
       'Python Developer',
-      'Problem Solver'
+      'Generative AI Specialist'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
