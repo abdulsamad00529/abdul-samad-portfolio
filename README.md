@@ -1,200 +1,101 @@
-# 🚀 Abdul Samad - AI/ML Engineer Portfolio
+# Abdul Samad — AI/ML Engineer Portfolio
 
-A modern, animated portfolio website showcasing my journey in Artificial Intelligence, Machine Learning, and Data Science.
+![Status](https://img.shields.io/badge/Status-Live-brightgreen)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+A premium, animated portfolio built to stand out. Dark theme, bento-grid project layout, floating dashboard card, 3D tilt effects, dual custom cursor, and scroll-triggered animations — all in a single HTML file with zero dependencies.
 
-## ✨ Features
+---
 
-- **🎨 Modern Design** - Clean, professional dark theme with cyan-purple gradient accents
-- **💫 Smooth Animations** - Fade-in effects, hover animations, and scroll-triggered animations
-- **⚡ Particle Background** - Dynamic animated particle system with connecting lines
-- **⌨️ Typing Effect** - Auto-rotating job titles in the hero section
-- **🎯 Custom Cursor** - Glowing cursor trail effect
-- **📱 Fully Responsive** - Perfect on mobile, tablet, and desktop
-- **🔗 Smooth Navigation** - Fixed navbar with smooth scroll to sections
-- **✨ Glassmorphism Cards** - Modern translucent card designs with backdrop blur
-- **🎭 Interactive Elements** - Hover effects on all cards and buttons
+## What's inside
 
-## 🛠️ Technologies Used
+- **Bento grid projects** — asymmetric layout, not a boring equal card grid
+- **Floating dashboard card** — macOS-style hero stat panel with animated progress bars
+- **3D card tilt** — project cards follow your mouse with perspective rotation
+- **Dual cursor** — dot + lagging ring with hover expansion states
+- **Typewriter** — cycles through job titles with a blinking cursor
+- **Scroll reveals** — staggered fade-up animations triggered by IntersectionObserver
+- **Animated counters** — stats count up with easing on scroll into view
+- **Project filter** — filter by NLP / Computer Vision / LLM / Deep Learning / Agent
+- **Active nav tracking** — current section highlighted as you scroll
+- **Particle canvas** — connected dot system in the background
+- **Loader animation** — progress bar on first load
 
-- HTML5
-- CSS3 (Custom Properties, Animations, Grid, Flexbox)
-- Vanilla JavaScript
-- Canvas API for particle effects
-- Google Fonts (Space Grotesk)
+---
 
-## 📂 Project Structure
+## Sections
 
-```
-portfolio/
-│
-├── index.html          # Main HTML file (or portfolio.html)
-├── README.md           # This file
-└── assets/            # Optional: for images/icons (if needed)
-```
+1. **Hero** — name, typewriter title, bio, CTAs, stat counters, floating dashboard card
+2. **Marquee** — infinite scrolling tech stack ticker
+3. **About** — bio, timeline, animated stat chips
+4. **Skills** — 6 categorized cards with progress bars and tag pills
+5. **Projects** — bento grid of all 7 AI sprint projects with filter tabs
+6. **Credentials** — 6 verified certifications with links
+7. **Contact** — email, GitHub, LinkedIn channels
 
-## 🚀 Quick Start
+---
 
-### Option 1: Direct Download
-1. Download `portfolio.html`
-2. Open it in your browser
-3. That's it! 🎉
+## 7-Day AI Sprint Projects
 
-### Option 2: Clone Repository
+| # | Project | Domain | Stack |
+|---|---------|--------|-------|
+| 1 | [Sentiment Analyzer](https://github.com/abdulsamad00529/sentiment-analyzer) | NLP | distilBERT · HuggingFace · Gradio |
+| 2 | [AI Resume Screener](https://github.com/abdulsamad00529/resume-screener) | NLP | sentence-transformers · spaCy · Streamlit |
+| 3 | [Object Detection App](https://github.com/abdulsamad00529/object-detection-app) | Computer Vision | YOLOv8 · OpenCV · Gradio |
+| 4 | [RAG Document Chatbot](https://github.com/abdulsamad00529/rag-doc-chatbot) | LLM / RAG | LangChain · FAISS · Groq · Streamlit |
+| 5 | [Stock Price Forecaster](https://github.com/abdulsamad00529/stock-forecaster) | Deep Learning | LSTM · TensorFlow · yfinance · Plotly |
+| 6 | [Image Caption Generator](https://github.com/abdulsamad00529/image-caption-ai) | Computer Vision | BLIP · HuggingFace · Gradio |
+| 7 | [Autonomous Research Agent](https://github.com/abdulsamad00529/research-agent) | LLM · Agent | LangChain ReAct · Groq · Tavily · Streamlit |
+
+---
+
+## Quick start
+
 ```bash
-# Clone the repository
-git clone https://github.com/abdulsamad00529/abdulsamad00529.github.io.git
-
-# Navigate to the project folder
-cd abdulsamad00529.github.io
-
-# Open in browser
-# Simply open index.html in your preferred browser
+git clone https://github.com/abdulsamad00529/abdul-samad-portfolio.git
+cd abdul-samad-portfolio
+open index.html
 ```
 
-## 🌐 Deploy to GitHub Pages
+No build step. No npm install. Open in any browser and it works.
 
-1. **Create a new repository** named `yourusername.github.io`
-   ```bash
-   # Or use your existing repository
-   ```
+---
 
-2. **Rename the file** from `portfolio.html` to `index.html`
+## Deploy to GitHub Pages
 
-3. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial portfolio commit"
-   git push origin main
-   ```
-
-4. **Enable GitHub Pages**
-   - Go to repository Settings
-   - Scroll to "Pages" section
-   - Select branch: `main`
-   - Select folder: `/ (root)`
-   - Click Save
-
-5. **Visit your site** at `https://yourusername.github.io`
-
-## 🎨 Customization Guide
-
-### Change Colors
-Edit the CSS variables in the `<style>` section:
-```css
-:root {
-  --bg-primary: #0a0e27;        /* Main background */
-  --bg-secondary: #151b3d;      /* Secondary background */
-  --accent-primary: #00d9ff;    /* Cyan accent */
-  --accent-secondary: #7b2ff7;  /* Purple accent */
-  --text-primary: #ffffff;      /* Main text */
-  --text-secondary: #a0aec0;    /* Secondary text */
-}
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
 ```
 
-### Update Content
+Then go to **Settings → Pages → Source: main / root** and save.
 
-#### Personal Information
-Find and replace in the HTML:
-- **Name**: Search for "Abdul Samad"
-- **Email**: Update `href="mailto:your-email@gmail.com"`
-- **GitHub**: Update `href="https://github.com/yourusername"`
-- **LinkedIn**: Update `href="https://linkedin.com/in/yourprofile"`
+Live at: `https://abdulsamad00529.github.io/abdul-samad-portfolio`
 
-#### Skills
-Add/remove skills in the Skills section:
-```html
-<div class="skill-card fade-in">
-  <div class="skill-icon">🎯</div>
-  <h3>Your Skill</h3>
-</div>
-```
+---
 
-#### Certifications
-Add new certifications:
-```html
-<div class="cert-card fade-in">
-  <div class="cert-header">
-    <div class="cert-logo">📜</div>
-    <div>
-      <div class="cert-title">Certification Name</div>
-      <div class="cert-date">Provider • Date</div>
-    </div>
-  </div>
-  <a href="your-certificate-link" target="_blank" class="cert-link">
-    View Certificate →
-  </a>
-</div>
-```
+## Tech
 
-#### Typing Effect Phrases
-Edit the JavaScript array:
-```javascript
-const phrases = [
-  'AI/ML Engineer',
-  'Data Scientist',
-  'Your Custom Title',
-  'Another Title'
-];
-```
+- HTML5 · CSS3 · Vanilla JavaScript
+- Google Fonts — Syne · Inter · JetBrains Mono
+- Canvas API for particle system
+- IntersectionObserver for scroll animations
+- CSS custom properties for the full design token system
+- Zero external JS libraries or frameworks
 
-## 📊 Sections
+---
 
-1. **Hero** - Introduction with animated typing effect
-2. **About** - Brief description and background
-3. **Skills** - Technical skills grid with hover effects
-4. **Certifications** - Professional certifications with links
-5. **Contact** - Email, GitHub, and LinkedIn links
-
-## 🎯 Performance
-
-- ⚡ No external dependencies (except Google Fonts)
-- 📦 Single file - easy to deploy
-- 🚀 Fast loading time
-- 📱 Mobile-first responsive design
-
-## 📱 Browser Support
-
-- ✅ Chrome (recommended)
-- ✅ Firefox
-- ✅ Safari
-- ✅ Edge
-- ✅ Opera
-
-## 📸 Screenshots
-
-*Add your portfolio screenshots here after deployment*
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your own portfolio! If you have suggestions for improvements:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📧 Contact
+## Contact
 
 **Abdul Samad**
 - Email: rauf.mughal8930@gmail.com
 - GitHub: [@abdulsamad00529](https://github.com/abdulsamad00529)
 - LinkedIn: [abdulsamad-ai](https://www.linkedin.com/in/abdulsamad-ai/)
 
-## 🙏 Acknowledgments
-
-- Inspired by modern portfolio designs
-- Built with passion for AI/ML and web development
-- Thanks to the open-source community
-
 ---
 
-⭐ **If you find this portfolio template helpful, please consider giving it a star!** ⭐
-
-Made with 💙 by Abdul Samad
+MIT License · Built by Abdul Samad
